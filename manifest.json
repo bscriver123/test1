@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "AI Routing Assistant",
+  "version": "1.0",
+  "description": "Automate interactions with multiple AI services based on a user-defined routing diagram.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.openai.com/*", "*://*.claude.ai/*", "*://*.gemini.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
