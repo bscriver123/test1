@@ -3,6 +3,7 @@ Data processing module for loading and preprocessing data.
 """
 from typing import Optional, Union
 import pandas as pd
+from loguru import logger
 
 
 class DataLoader:

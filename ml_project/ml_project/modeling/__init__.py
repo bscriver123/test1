@@ -5,6 +5,7 @@ from typing import Optional, Union, Dict, Any
 import numpy as np
 import xgboost as xgb
 from sklearn.base import BaseEstimator
+from loguru import logger
 
 
 class XGBoostModel:

@@ -3,6 +3,7 @@ Evaluation module for model assessment and metrics calculation.
 """
 from typing import Dict, Union, Optional
 import numpy as np
+from loguru import logger
 from sklearn.metrics import (
     accuracy_score,
     precision_score,
